@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wing-flap {
+  0%, 100% {
+    transform: scaleY(1) rotate(0deg);
+  }
+  50% {
+    transform: scaleY(0.8) rotate(5deg);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wing-flap {
+  animation: wing-flap 0.3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 20s linear infinite;
+}
